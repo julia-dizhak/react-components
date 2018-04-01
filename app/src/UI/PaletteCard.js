@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
 
-const LetterStyle = styled.div`
+import PalleteCard from './PalleteCard';
+
+const CardStyle = styled.div`
   padding: 10px;
   margin: 10px;
   background-color: props.backgroundColor;
@@ -13,10 +15,10 @@ const LetterStyle = styled.div`
   border-radius: 2px;
 `;
 
-export default function Letter(props) {
+export default function PalleteCard(props) {
     return (
-        <LetterStyle>
-            { props.children } 
-        </LetterStyle>
+        <CardStyle>
+            test
+        </CardStyle>
     )  
 }

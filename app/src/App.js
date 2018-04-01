@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import Word from './UI/Word';
+import PalleteCard from './UI/Word';
 
 export default class App extends Component {
   render() {
@@ -8,6 +10,8 @@ export default class App extends Component {
           <Word />
           <hr />  
 
+          <PalleteCard />
+          <hr /> 
       </div>
     );
   }
