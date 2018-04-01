@@ -5,7 +5,7 @@ export default function Letter(props) {
         padding: 10,
         margin: 10,
         backgroundColor: props.backgroundColor,
-        color: "#333",
+        color: "#333", 
         display: "inline-block",
         fontFamily: "monospace",
         fontSize: "32",
