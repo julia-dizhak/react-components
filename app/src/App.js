@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Word from './UI/Word';
-import PalleteCard from './UI/Word';
+import PaletteCard from './UI/PaletteCard';
 
 export default class App extends Component {
   render() {
@@ -10,7 +10,8 @@ export default class App extends Component {
           <Word />
           <hr />  
 
-          <PalleteCard />
+          <PaletteCard color="#FF6663" />
+          <PaletteCard color="#FFA737" />
           <hr /> 
       </div>
     );
