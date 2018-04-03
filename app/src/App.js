@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-import Word from './UI/Word';
-import PaletteCard from './UI/PaletteCard';
+import Word from './components/Word/';
+import PaletteCard from './components/PaletteCard/';
+import Documents from './components/Documents/';
 
 export default class App extends Component {
   render() {
@@ -12,6 +13,9 @@ export default class App extends Component {
 
           <PaletteCard color="#FF6663" />
           <PaletteCard color="#FFA737" />
+          <hr /> 
+           
+          <Documents {...this.props} /> 
           <hr /> 
       </div>
     );
