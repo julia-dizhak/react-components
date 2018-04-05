@@ -4,6 +4,7 @@ import Word from './components/Word/';
 import PaletteCard from './components/PaletteCard/';
 import Documents from './components/Documents/';
 import Shirt from './components/Shirt/';
+import LightningCounterDisplay from './components/LightningCounter/LightningCounterDisplay';
 import Spinner from './ui/Spinner';
 
 export default class App extends Component {
@@ -23,10 +24,13 @@ export default class App extends Component {
           <Documents {...this.props} /> 
           <hr /> 
 
-          {/* <Spinner 
+          <Spinner 
               title="Please wait"
               subTitle="Uploading document text"
-          /> */}
+          />
+          <hr />
+
+          <LightningCounterDisplay />
           <hr />
       </div>
     );

@@ -12,6 +12,7 @@ const SpinnerStyle = styled.div`
 
   z-index: 10;
   position: fixed;
+  display: none
 `;
 
 const SpinnerOverlayStyle = styled.div`
