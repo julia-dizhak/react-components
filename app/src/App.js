@@ -4,6 +4,7 @@ import Word from './components/Word/';
 import PaletteCard from './components/PaletteCard/';
 import Documents from './components/Documents/';
 import Shirt from './components/Shirt/';
+import Spinner from './ui/Spinner';
 
 export default class App extends Component {
   render() {
@@ -21,6 +22,12 @@ export default class App extends Component {
            
           <Documents {...this.props} /> 
           <hr /> 
+
+          {/* <Spinner 
+              title="Please wait"
+              subTitle="Uploading document text"
+          /> */}
+          <hr />
       </div>
     );
   }
