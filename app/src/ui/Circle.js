@@ -6,11 +6,12 @@ export default function Circle(props) {
     let circleStyle = {
         padding: 10,
         margin: 20,
-        display: "inline-block",
+        display: 'inline-block',
         backgroundColor: props.bgColor,
         borderRadius: "50%",
         width: 100,
         height: 100,
+        textAlign: 'center'
     };
     
     return (
@@ -21,11 +22,21 @@ export default function Circle(props) {
 let theCircle = <Circle bgColor="#F9C240" />;
 
 function showCircle() {
-    const colors = ['#393E41', '#E94F37', '#1C89BF', '#A1D363'];
-    let randomColor = Math.floor(Math.random() * colors.length);
-    console.log( colors[randomColor] );
+    const colors = ['#393E41', '#E94F37', '#1C89BF', '#A1D363', '#85FFC7', '#297373', '#FF8552', '#A40E4C'],
+    len = colors.length;
 
-    return <Circle bgColor={colors[randomColor]} />
+    let randomColor = Math.floor(Math.random() * colors.length),
+    renderData = [];
+
+    //console.log( colors[randomColor] );
+
+    //return <Circle bgColor={colors[randomColor]} />
+
+    for (let i = 0; i < len; i++) {
+        let color = colors[i];
+        renderData.push(<Circle key={i+ color} bgColor={colors[i]} />)
+    }
+    return renderData;
 }
 
 export { Circle, theCircle, showCircle };
