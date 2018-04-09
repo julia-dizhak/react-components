@@ -52,6 +52,7 @@ const state = {
     ]
 }
 
-ReactDOM.render(<App documents={state.documents} />, document.getElementById("root"));
+let destination =  document.getElementById("root");
+ReactDOM.render(<App documents={state.documents} />, destination);
 
 registerServiceWorker();

@@ -2,9 +2,10 @@
 Build UI components by ReactJS
 
 ## TODO
-* render() to destination
-* import React from 'react' from webpack package
+* render() to destination (+);
+* import React from 'react' from webpack package (babel-plugin-react-require);
 * Spinner: hide/show from props
+* To understand why ReactDOM.render is not working with querySelector - document.querySelector("#container") (probably because of parent or child); 
 
 Letter:
 styled via props
