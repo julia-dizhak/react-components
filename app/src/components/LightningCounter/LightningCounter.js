@@ -18,7 +18,7 @@ export default class LightningCounter extends Component {
     }
 
     componentDidMount() {
-      setInterval(this.timerTick, 1000)
+      //setInterval(this.timerTick, 1000)
     }
     
     render() {

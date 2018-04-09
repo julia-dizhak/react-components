@@ -2,9 +2,9 @@
 Build UI components by ReactJS
 
 ## TODO
-
-Spinner:
-hide/show from props
+* render() to destination
+* import React from 'react' from webpack package
+* Spinner: hide/show from props
 
 Letter:
 styled via props

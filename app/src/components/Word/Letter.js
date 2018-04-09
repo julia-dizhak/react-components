@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
 
 const LetterStyle = styled.div`
@@ -8,7 +8,7 @@ const LetterStyle = styled.div`
   color: #333;
   display: inline-block;
   font-family: "Monospace";
-  font-size: 32;
+  font-size: 32px;
   text-align: center;
   border-radius: 2px;
 `;

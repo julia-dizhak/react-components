@@ -5,7 +5,10 @@ import PaletteCard from './components/PaletteCard/';
 import Documents from './components/Documents/';
 import Shirt from './components/Shirt/';
 import LightningCounterDisplay from './components/LightningCounter/LightningCounterDisplay';
+
 import Spinner from './ui/Spinner';
+
+import { theCircle, showCircle } from './ui/Circle';
 
 export default class App extends Component {
   render() {
@@ -31,6 +34,10 @@ export default class App extends Component {
           <hr />
 
           <LightningCounterDisplay />
+          <hr />
+         
+          { theCircle }
+          {showCircle()}
           <hr />
       </div>
     );
