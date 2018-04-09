@@ -2,11 +2,12 @@
 Build UI components by ReactJS
 
 ## TODO
-* use spread operator; 
+* use spread operator (?); 
 * render() to destination (+);
 * import React from 'react' from webpack package (babel-plugin-react-require);
 * Spinner: hide/show from props
 * To understand why ReactDOM.render is not working with querySelector - document.querySelector("#container") (probably because of parent or child); 
+* Counter component: don't show negative value; 
 
 Letter:
 styled via props

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Display from './Display';
+import Button from './Button';
+import { ButtonGroup } from 'react-bootstrap';
 
 export default class Counter extends Component {
     state = {
@@ -25,9 +27,18 @@ export default class Counter extends Component {
         this.setState({ count: currentCount })
     }
 
-    render() {
-        //const { display } = props;
+    handleDecrease = (event) => {
+        let currentCount = this.state.count;
 
+        if (event.shiftKey) {
+            currentCount -= 2;
+        } else {
+            currentCount -= 1
+        }
+        this.setState({ count: currentCount })
+    }
+
+    render() {
         let backgroundStyle = {
             padding: 20,
             backgroundColor: "#FFC53A",
@@ -37,24 +48,17 @@ export default class Counter extends Component {
             textAlign: "center"
         };
 
-        let buttonStyle = {
-            fontSize: '1em',
-            width: 30,
-            height: 30,
-            fontFamily: 'sans-serif',
-            color: '#333',
-            fontWeight: 'bold',
-            lineHeight: '3px',
-            cursor: 'pointer'
-        };
-
         return (
             <div style={backgroundStyle}>
                 <Display display={this.state.count} />
-                
-                <button 
-                    style={buttonStyle} 
-                    onClick={this.handleIncrease}>+</button>
+                <ButtonGroup>
+                    <Button 
+                        display='+' 
+                        clickHandler={this.handleIncrease} />
+                    <Button 
+                        display='-' 
+                        clickHandler={this.handleDecrease} />
+                </ButtonGroup>    
             </div>  
         );
     }    
