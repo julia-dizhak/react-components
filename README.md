@@ -2,6 +2,7 @@
 Build UI components by ReactJS
 
 ## TODO
+* implement Router;
 * use spread operator (?); 
 * render() to destination (+);
 * import React from 'react' from webpack package (babel-plugin-react-require);

@@ -15,7 +15,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-          <Word />
+          {/* <Word />
           <hr />  
 
           <PaletteCard color="#FF6663" />
@@ -23,10 +23,10 @@ export default class App extends Component {
           <hr /> 
 
           <Shirt color="steelblue" num="4" size="medium" />
-          <hr />
+          <hr /> */}
            
           <Documents {...this.props} /> 
-          <hr /> 
+          {/* <hr /> 
 
           <Spinner 
               title="Please wait"
@@ -42,7 +42,7 @@ export default class App extends Component {
           <hr />
 
           <Counter />
-          <hr />
+          <hr /> */}
       </div>
     );
   }

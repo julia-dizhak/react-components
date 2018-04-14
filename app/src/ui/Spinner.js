@@ -45,8 +45,41 @@ export default function Spinner(props) {
             <SpinnerOverlayStyle className="spinner-overlay">&nbsp;</SpinnerOverlayStyle>
             <SpinnerContentStyle className="spinner-content">
                 <p>{title}</p>
-                <p>{subTitle}</p>
             </SpinnerContentStyle>
         </SpinnerStyle>  
     )
 };
+
+// import PropTypes from 'prop-types';
+// import withPortal from 'shared/hoc/withPortalHOC';
+
+// const propTypes = {
+//         title: PropTypes.string,
+//         subTitle: PropTypes.string
+//     }, defaultProps = {
+//         title: gettext('Please wait')
+//     };
+
+// function Spinner(props) {
+//     const { title, subTitle } = props,
+//         loaderLineCount = 8;
+
+//     return (
+//         <div className="spinner">
+//             <div
+//                 className="spinner-overlay">&nbsp;</div>
+//             <div className="spinner-content">
+//                 <p>{title}</p>
+//                 {subTitle && <p>{subTitle}</p>}
+//                 <span className="line-spin-fade-loader">
+//                     { [...Array(loaderLineCount)].map((_, idx) => <span key={idx} />) }
+//                 </span>
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default withPortal(Spinner);
+
+// Spinner.propTypes = propTypes;
+// Spinner.defaultProps = defaultProps;
