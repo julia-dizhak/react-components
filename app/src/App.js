@@ -6,6 +6,7 @@ import Documents from './components/Documents/';
 import Shirt from './components/Shirt/';
 import LightningCounterDisplay from './components/LightningCounter/LightningCounterDisplay';
 import Counter from './components/Counter/';
+import CounterParent from './components/Counter/CounterParent';
 
 import Spinner from './ui/Spinner';
 
@@ -15,7 +16,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-          {/* <Word />
+          <Word />
           <hr />  
 
           <PaletteCard color="#FF6663" />
@@ -23,10 +24,10 @@ export default class App extends Component {
           <hr /> 
 
           <Shirt color="steelblue" num="4" size="medium" />
-          <hr /> */}
+          <hr /> 
            
-          <Documents {...this.props} /> 
-          {/* <hr /> 
+          <Documents {...this.props} />  
+          <hr /> 
 
           <Spinner 
               title="Please wait"
@@ -42,7 +43,9 @@ export default class App extends Component {
           <hr />
 
           <Counter />
-          <hr /> */}
+          <hr />
+
+          <CounterParent />
       </div>
     );
   }

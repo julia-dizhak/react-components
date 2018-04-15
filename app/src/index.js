@@ -19,7 +19,6 @@ const state = {
             'api_add_page_url': '/en/api/v2/orders/517871/documents/88261bc1-a6c9-4845-8ad0-09cb902c4f9b/add-page/',
             'api_delete_url': '/en/api/v2/orders/517871/documents/88261bc1-a6c9-4845-8ad0-09cb902c4f9b/',
             'api_upload_url': '/en/api/v2/orders/517871/documents/88261bc1-a6c9-4845-8ad0-09cb902c4f9b/upload/'
-              
         },
         {
             'token': '1feb26c2-e9db-482a-b4d1-90e135460e14',
