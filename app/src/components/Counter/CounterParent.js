@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import unmountComponentAtNode from 'react-dom';
-
-import Display from './Display';
-import Button from './Button';
-import { ButtonGroup } from 'react-bootstrap';
+//import unmountComponentAtNode from 'react-dom';
 
 const propTypes = {
     title: PropTypes.string

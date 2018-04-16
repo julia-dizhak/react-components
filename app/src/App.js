@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import './style.css';
 import Word from './components/Word/';
 import PaletteCard from './components/PaletteCard/';
 import Documents from './components/Documents/';
@@ -7,6 +8,7 @@ import Shirt from './components/Shirt/';
 import LightningCounterDisplay from './components/LightningCounter/LightningCounterDisplay';
 import Counter from './components/Counter/';
 import CounterParent from './components/Counter/CounterParent';
+import Colorizer from './ui/Colorizer';
 
 import Spinner from './ui/Spinner';
 
@@ -16,8 +18,20 @@ export default class App extends Component {
   render() {
     return (
       <div className="app">
-          <Word />
-          <hr />  
+          <nav className="navigation">
+            <ul className="header">
+              <li>Home</li>
+              <li>Stuff</li>
+              <li>Contact</li>
+            </ul>
+          </nav>  
+
+          <div className="content">
+            <Word />
+            <hr />  
+          </div>  
+
+          
 
           <PaletteCard color="#FF6663" />
           <PaletteCard color="#FFA737" />
@@ -45,7 +59,10 @@ export default class App extends Component {
           <Counter />
           <hr />
 
-          <CounterParent />
+          {/* <CounterParent /> */}
+          <hr />
+
+          <Colorizer />
       </div>
     );
   }

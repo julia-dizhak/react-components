@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { autobind } from 'core-decorators';
+//import { autobind } from 'core-decorators';
 import styled from 'styled-components';
 import Dropzone from 'react-dropzone';
 import './style.css';
