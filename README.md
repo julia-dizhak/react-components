@@ -2,7 +2,7 @@
 Build UI components by ReactJS
 
 ## TODO
-* implement Router;
+* implement Router: component and props(pass default), fix activeClassName, exact path without hash. 
 * use spread operator (?); 
 * render() to destination (+);
 * import React from 'react' from webpack package (babel-plugin-react-require);

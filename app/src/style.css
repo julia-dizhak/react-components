@@ -5,7 +5,7 @@
 }
 
 .navigation {
-    background-color: #111;
+    background-color: #ccc;
     padding: 0;
 }
 
@@ -17,14 +17,18 @@
     display: inline-block;
 }
 
-  .content {
+.active {
+    background-color: #0099FF;
+}
+
+.content {
     background-color: #FFF;
     padding: 20px;
-  }
-  .content h2 {
+}
+.content h2 {
     padding: 0;
     margin: 0;
-  }
-  .content li {
+}
+.content li {
     margin-bottom: 10px;
-  }
+}

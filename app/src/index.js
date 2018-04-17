@@ -1,5 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Router, Route, Switch, HashRouter } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
+
+import Word from './components/Word/';
+import PaletteCard from './components/PaletteCard/';
 
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
@@ -51,7 +57,15 @@ const state = {
     ]
 }
 
+const history = createHistory();
+
 let destination =  document.getElementById("root");
-ReactDOM.render(<App documents={state.documents} />, destination);
+
+ReactDOM.render(
+    <HashRouter>
+        <App />
+    </HashRouter>, 
+    destination
+);
 
 registerServiceWorker();
