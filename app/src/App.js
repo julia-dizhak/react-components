@@ -16,6 +16,7 @@ import Colorizer from './ui/Colorizer';
 import Spinner from './ui/Spinner';
 
 import { theCircle, showCircle } from './ui/Circle';
+import IPAddressContainer from './components/IPAddressContainer';
 
 export default class App extends Component {
   render() {
@@ -23,7 +24,6 @@ export default class App extends Component {
       <div className="app">
         <Header />
         <Main />
-        
         
           {/* <PaletteCard color="#FF6663" />
           <PaletteCard color="#FFA737" />
@@ -34,7 +34,7 @@ export default class App extends Component {
            
           {/* <Documents {...this.props} />   */}
           <hr /> 
-
+          
           <Spinner 
               title="Please wait"
               subTitle="Uploading document text"
@@ -48,12 +48,13 @@ export default class App extends Component {
           { showCircle() }
           <hr />
 
-         
-
           {/* <CounterParent /> */}
           <hr />
 
           <Colorizer />
+
+          <hr /> 
+          <IPAddressContainer />
       </div>
     );
   }

@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { createPortal } from 'react-dom';
 
 export default TheComponent =>
