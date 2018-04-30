@@ -5,11 +5,13 @@ export default function Header(props) {
     return (
         <header>
             <nav className="navigation">
+                Components:
                 <ul className="header">
-                    <li><Link to="/" activeClassName="active">Home</Link></li>
-                    <li><Link to="/word" activeClassName="active">Word Component</Link></li>
-                    <li><Link to="/palette" activeClassName="active">Palette Component</Link></li>
-                    <li><Link to="/counter" activeClassName="active">Counter Component</Link></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/word">Word Component</Link></li>
+                    <li><Link to="/palette">Palette Component</Link></li>
+                    <li><Link to="/counter">Counter Component</Link></li>
+                    <li><Link to="/documents">Documents</Link></li>
                 </ul>
             </nav> 
         </header>

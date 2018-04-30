@@ -25,8 +25,7 @@ export default class Colorizer extends Component {
             height: 20,
             borderRadius: 4,
             margin: 10
-        },
-        self = this;
+        };
 
         return (
             <div className="colorArea">

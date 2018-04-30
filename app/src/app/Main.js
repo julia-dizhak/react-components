@@ -1,9 +1,10 @@
 import React from 'react';
-import { Router, Route, Switch, HashRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Word from './../components/Word/';
 import PaletteCard from './../components/PaletteCard/';
 import Counter from './../components/Counter/';
+import Documents from './../components/Documents/';
 
 export default function Main(props) {
     return (
@@ -13,6 +14,7 @@ export default function Main(props) {
                 <Route path="/word" component={Word}/>
                 <Route path="/palette" component={PaletteCard}/>
                 <Route path="/counter" component={Counter}/>
+                <Route path="/documents" component={Documents}/>
             </Switch>
         </main>
     )

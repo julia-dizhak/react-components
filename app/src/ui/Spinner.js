@@ -46,6 +46,7 @@ function Spinner(props) {
             <SpinnerOverlayStyle className="spinner-overlay">&nbsp;</SpinnerOverlayStyle>
             <SpinnerContentStyle className="spinner-content">
                 <p>{title}</p>
+                <p>{subTitle}</p>
             </SpinnerContentStyle>
         </SpinnerStyle>  
     )

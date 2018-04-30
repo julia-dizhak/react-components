@@ -5,12 +5,8 @@ import './style.css';
 import Header from './app/Header';
 import Main from './app/Main';
 
-
-import Documents from './components/Documents/';
 import Shirt from './components/Shirt/';
 import LightningCounterDisplay from './components/LightningCounter/LightningCounterDisplay';
-
-import CounterParent from './components/Counter/CounterParent';
 import Colorizer from './ui/Colorizer';
 
 import Spinner from './ui/Spinner';
@@ -31,10 +27,7 @@ export default class App extends Component {
 
           <Shirt color="steelblue" num="4" size="medium" />
           <hr /> 
-           
-          {/* <Documents {...this.props} />   */}
-          <hr /> 
-          
+               
           <Spinner 
               title="Please wait"
               subTitle="Uploading document text"
@@ -48,8 +41,6 @@ export default class App extends Component {
           { showCircle() }
           <hr />
 
-          {/* <CounterParent /> */}
-          <hr />
 
           <Colorizer />
 

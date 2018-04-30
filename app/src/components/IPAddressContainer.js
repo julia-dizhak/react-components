@@ -14,7 +14,7 @@ export default class IPAddressContainer extends Component {
     }
 
     handleProcessRequest = () => {
-        if (xhr.readyState == 4 && xhr.status == 200) {
+        if (xhr.readyState === 4 && xhr.status === 200) {
             const response = JSON.parse(xhr.responseText);
 
             this.setState({ ip_address: response.ip})
