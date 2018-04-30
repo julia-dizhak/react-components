@@ -25,22 +25,53 @@ const propTypes = {
 };
         
 export default class Excel extends Component{
-    state = {
-        headers: headers,
-        data: data
+    constructor(props) {
+        super();
+
+        this.state = {
+            headers: headers,
+            data: data,
+            sortby: null,
+            descending: false
+        }
     }
-                 
+
+    handleSort = (event) => {       
+        let column = event.target.cellIndex,
+        data = this.state.data.slice(), // copy the data
+        descending = this.state.sortby === column && !this.state.descending;
+
+        data.sort(function(a, b) {
+            return descending ? (a[column] < b[column] ? 1:-1) : (a[column] > b[column] ? 1:-1);
+        });
+
+        this.setState({
+            data: data,
+            sortby: column,
+            descending: descending
+        })
+    }
+              
     render() {
+        const arrowUp = '\u2191',
+            arrowDown = ' \u2193',
+            arrow = this.state.descending ? arrowUp : arrowDown;
+
         return (
             <React.Fragment>
                 <table className="excel"> 
                     <thead>
                         <tr>    
                             {this.state.headers.map((title, index) => (
-                                <th key={index}>{ title }</th>
+                                <th 
+                                    onClick={this.handleSort}
+                                    key={index}>       
+                                    { this.state.sortby === index ? title + arrow :  title  }
+                                </th>
                             ))}
                         </tr>
                     </thead>
+
                     <tbody>
                         {this.state.data.map((row, index) => (
                             <tr key={index}>

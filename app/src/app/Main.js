@@ -5,6 +5,7 @@ import Word from './../components/Word/';
 import PaletteCard from './../components/PaletteCard/';
 import Counter from './../components/Counter/';
 import Documents from './../components/Documents/';
+import Excel from './../components/Excel/';
 
 export default function Main(props) {
     return (
@@ -15,6 +16,7 @@ export default function Main(props) {
                 <Route path="/palette" component={PaletteCard}/>
                 <Route path="/counter" component={Counter}/>
                 <Route path="/documents" component={Documents}/>
+                <Route path="/excel" component={Excel}/>
             </Switch>
         </main>
     )
