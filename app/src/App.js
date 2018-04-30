@@ -13,11 +13,15 @@ import Spinner from './ui/Spinner';
 
 import { theCircle, showCircle } from './ui/Circle';
 import IPAddressContainer from './components/IPAddressContainer';
+import Excel from './components/Excel/';
 
 export default class App extends Component {
   render() {
     return (
       <div className="app">
+
+        <Excel />
+
         <Header />
         <Main />
         

@@ -35,3 +35,13 @@ body {
 .content li {
     margin-bottom: 10px;
 }
+
+.excel {
+    border: 1px solid #ccc;
+}
+.excel th, .excel td {
+    padding: 5px;
+}
+/* .excel th {
+    border: 1px solid #ccc;
+} */
