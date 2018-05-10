@@ -13,6 +13,7 @@ export default function Header(props) {
                     <li><Link to="/counter">Counter Component</Link></li>
                     <li><Link to="/documents">Documents</Link></li>
                     <li><Link to="/excel">Excel Table</Link></li>
+                    <li><Link to="/search">Search Form</Link></li>
                 </ul>
             </nav> 
         </header>

@@ -13,6 +13,7 @@ import Spinner from './ui/Spinner';
 
 import { theCircle, showCircle } from './ui/Circle';
 import IPAddressContainer from './components/IPAddressContainer';
+import SearchForm from './components/search/SearchForm';
 
 export default class App extends Component {
   render() {
@@ -20,6 +21,9 @@ export default class App extends Component {
       <div className="app">
         <Header />
         <Main />
+
+        <SearchForm provider="Google" />
+        <SearchForm provider="Bing" />
         
           {/* <PaletteCard color="#FF6663" />
           <PaletteCard color="#FFA737" />
