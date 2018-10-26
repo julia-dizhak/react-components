@@ -1,23 +1,13 @@
-# react-components
-Build UI components by ReactJS
+# A Complete Intro to React
 
-## TODO
-* implement Router: component and props(pass default), fix activeClassName, exact path without hash. 
-* use spread operator (?); 
-* render() to destination (+);
-* import React from 'react' from webpack package (babel-plugin-react-require);
-* Spinner: hide/show from props
-* To understand why ReactDOM.render is not working with querySelector - document.querySelector("#container") (probably because of parent or child); 
-* Counter component: don't show negative value; 
+Welcome to a complete intro to React! The site actual workshop material for this repo can be found [here][gh-page]. On the master branch you will find the completed project. On the start branch you will find the barebones boilerplater of the project designed to help you get started.
 
-Letter:
-styled via props
-always uppercase letter or possibility to manage
-create common style for component
+## Contributing
 
-LightningCounterDisplay
-Set the initial state value: getInitialState;
-Start timer and setting state;
-Rendering the state change;
+Please contribute, file issues, and make PRs. More than anything I'm sure there are typos abounding.
 
-Random bgcolor for cycles
+## License
+
+MIT
+
+[gh-page]: http://btholt.github.io/complete-intro-to-react/
