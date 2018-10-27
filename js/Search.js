@@ -8,7 +8,7 @@ export default function Search() {
         <div className="search">
             {
                 preload.shows.map(
-                    (show) => <ShowCard {...show} />
+                    (show) => <ShowCard key={show.imdbID} {...show} />
                 )    
             }
         </div>

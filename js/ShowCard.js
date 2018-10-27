@@ -23,17 +23,15 @@ export default function ShowCard(props) {
 
     return (
         <div className="show-card">
-            <div className="show-card">
-                <img 
-                    alt={`${title} show poster`}
-                    src={`/public/img/posters/${poster}`} 
-                />
-                <div>
-                    <h2>{title}</h2>
-                    <h3>{year}</h3>
-                    <p>{description}</p>  
-                </div>    
-            </div>
+            <img 
+                alt={`${title} show poster`}
+                src={`/public/img/posters/${poster}`} 
+            />
+            <div>
+                <h2>{title}</h2>
+                <h3>{year}</h3>
+                <p>{description}</p>  
+            </div>    
         </div>
     );
 }
