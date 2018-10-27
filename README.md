@@ -1,6 +1,8 @@
 # A netflix app by React
 
 * prettier 
+* eslint
+* webpack
 
 ## Contributing
 

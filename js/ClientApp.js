@@ -1,22 +1,16 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-// import Landing from './components/Landing';
-// import ShowCardList from './components/ShowCardList';
+import { render } from 'react-dom';
 
-// import './styles/style.css';
-
-const FourOrFour = () => <div>404</div>;
-
-export default function App() {
+export default function App(props) {
     return (
-        <BrowserRouter>
-            <div className="app">
-                <Switch>
-                    {/* <Route exact path="/" component={Landing} /> */}
-                    {/* <Route path="/search" component={Search} /> */}
-                    <Route component={FourOrFour} />
-                </Switch>
-            </div>
-        </BrowserRouter>
-    );
+        <div className="app">
+            <div className="landing">
+                <h1>svideo</h1>
+                <input type="text" placeholder="search" />  
+                <a>or browse all</a>   
+            </div>     
+        </div>
+    )
 }
+
+render(<App />, document.getElementById('app'));
