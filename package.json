@@ -10,6 +10,7 @@
         "api": "node ratingsAPI.js",
         "build": "webpack",
         "watch": "webpack --watch",
+        "dev": "webpack-dev-server",
         "format": "prettier --write --single-quote --print-width=120 --parser-flow --tab-width=4 \"js/**/*.js\"",
         "lint": "eslint \"js/**/*.js\" --quiet"
     },
@@ -35,6 +36,7 @@
         "styled-components": "2.0.0",
         "webpack": "^4.23.1",
         "webpack-dev-middleware": "1.10.2",
+        "webpack-dev-server": "^3.1.10",
         "webpack-hot-middleware": "2.18.0"
     },
     "devDependencies": {
@@ -67,7 +69,6 @@
         "prettier": "^1.14.3",
         "react-hot-loader": "3.0.0-beta.6",
         "react-test-renderer": "15.5.4",
-        "webpack-cli": "^3.1.2",
-        "webpack-dev-server": "2.4.5"
+        "webpack-cli": "^3.1.2"
     }
 }

@@ -1,15 +1,22 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-export default function App(props) {
+import Landing from './Landing';
+import Search from './Search';
+import FourOrFour from './FourOrFour';
+
+export default function App() {
     return (
-        <div className="app">
-            <div className="landing">
-                <h1>svideo</h1>
-                <input type="text" placeholder="search" />  
-                <a>or browse all</a>   
-            </div>     
-        </div>
+        <BrowserRouter>
+            <div className="app">
+                <Switch>
+                    <Route exact path="/" component={Landing} />
+                    <Route exact path="/search" component={Search} />
+                    <Route component={FourOrFour} />
+                </Switch>
+            </div>
+        </BrowserRouter>
     )
 }
 
