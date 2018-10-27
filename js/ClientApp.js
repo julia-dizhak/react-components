@@ -12,7 +12,7 @@ export default function App() {
             <div className="app">
                 <Switch>
                     <Route exact path="/" component={Landing} />
-                    <Route exact path="/search" component={Search} />
+                    <Route path="/search" component={Search} />
                     <Route component={FourOrFour} />
                 </Switch>
             </div>
