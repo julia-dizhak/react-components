@@ -5,8 +5,8 @@ import styled from 'styled-components';
 // <pre>
 //    <code>
 //        {JSON.stringify(preload, null, 4)}
-//    </code>    
-// </pre>  
+//    </code>
+// </pre>
 
 const propTypes = {
     poster: PropTypes.string.isRequired,
@@ -43,21 +43,17 @@ const Image = styled.img`
     margin-right: 10px;
 `;
 
-
 export default function ShowCard(props) {
     const { title, poster, year, description } = props;
 
     return (
         <Wrapper className="show-card">
-            <Image 
-                alt={`${title} show poster`}
-                src={`/public/img/posters/${poster}`} 
-            />
+            <Image alt={`${title} show poster`} src={`/public/img/posters/${poster}`} />
             <div>
                 <h2>{title}</h2>
                 <h3>{year}</h3>
-                <p>{description}</p>  
-            </div>    
+                <p>{description}</p>
+            </div>
         </Wrapper>
     );
 }

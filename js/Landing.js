@@ -5,9 +5,9 @@ export default function Landing() {
         <div className="app">
             <div className="landing">
                 <h1>svideo</h1>
-                <input type="text" placeholder="search" />  
-                <a href="/search">or browse all</a>   
-            </div>     
+                <input type="text" placeholder="search" />
+                <a href="/search">or browse all</a>
+            </div>
         </div>
     );
 }

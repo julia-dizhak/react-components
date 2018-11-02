@@ -524,10 +524,13 @@ html {
     min-width: 1400px;
 }
 
+.search-input h1 {
+    margin-right: 30px;
+}
 .search-input {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     margin: 0 0 15px 0;
 }

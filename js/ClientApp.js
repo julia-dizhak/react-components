@@ -17,7 +17,7 @@ export default function App() {
                 </Switch>
             </div>
         </BrowserRouter>
-    )
+    );
 }
 
 render(<App />, document.getElementById('app'));
