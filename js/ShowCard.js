@@ -19,13 +19,22 @@ const defaultProps = {
     title: 'stuff'
 };
 
+const breakPoint = '980px';
+
 const Wrapper = styled.div`
     width: 32%;
-    border: 2px solid #333;
+    border: 1px solid #333;
     border-radius: 4px;
     margin-bottom: 25px;
-    padding-right: 15px;
     overflow: hidden;
+
+    & > h2 {
+        color: blue;
+    }
+
+    @media (${breakPoint}) {
+        color: black;
+    }
 `;
 
 const Image = styled.img`

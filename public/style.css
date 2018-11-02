@@ -497,7 +497,7 @@ html {
   border-color: #333;
 }
 
-.details, .search {
+.details {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -510,11 +510,40 @@ html {
   min-width: 1400px;
 }
 
-.search > div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+.search {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    overflow-y: scroll;
+
+    background-color: rgba(220, 220, 220, 0.93);
+    padding: 15px 30px;
+    border-radius: 4px;
+    min-width: 1400px;
+}
+
+.search-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+
+.search-input input[type=search] {
+    border-radius: 4px;
+    min-width: 20%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: top;
 }
 
 pre {
@@ -543,18 +572,15 @@ pre {
 //   border-radius: inherit;
 // }
 
-// .show-card {
-//   float: left;
-//   margin-right: 2%;
-//   border: 2px solid #333;
-//   border-radius: 4px;
-//   text-align: left;
-//   width: 32%;
-//   height: 0;
-//   padding-bottom: 19.8%;
-//   overflow: hidden;
-//   margin-bottom: 2%;
-// }
+ .show-card {
+    box-sizing: border-box;
+    margin-right: 1%;
+    text-align: left;
+    height: 0;
+    padding-bottom: 19.8%;
+    overflow: hidden;
+    margin-bottom: 2%;
+}
 
 // .show-card:nth-child(3n), .search > div > a:nth-child(3n) > .show-card {
 //   margin-right: 0;
@@ -584,9 +610,10 @@ pre {
 //   font-size: 13px;
 // }
 
-// .show-card > div > p {
-//   margin: 0;
-//   font-size: 13px;
+.show-card p {
+   margin: 0;
+   font-size: 15px;
+   line-height: 1.5;
 }
 
 .search > header + div {

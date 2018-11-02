@@ -3,6 +3,7 @@
 * prettier 
 * eslint
 * webpack
+* styled-components
 
 * Router, Route
 
