@@ -2,12 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-// <pre>
-//    <code>
-//        {JSON.stringify(preload, null, 4)}
-//    </code>
-// </pre>
-
 const propTypes = {
     poster: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,

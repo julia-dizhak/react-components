@@ -1,5 +1,6 @@
 # A netflix app by React
 
+## Packages
 * prettier 
 * eslint
 * webpack
@@ -7,10 +8,24 @@
 
 * Router, Route
 
+## Tests
+* jest 
+* enzyme
 
-## Contributing
+## React 
 
-Please contribute, file issues, and make PRs. More than anything I'm sure there are typos abounding.
+* format 
+```
+<pre>
+    <code>
+        {JSON.stringify(preload, null, 4)}
+    </code>
+</pre>
+```
+
+### Contributing
+
+Please contribute, file issues, and make pr's. More than anything I'm sure there are typos abounding.
 
 ## License
 
