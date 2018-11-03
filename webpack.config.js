@@ -3,7 +3,12 @@ const webpack = require('webpack');
 
 module.exports = {
     context: __dirname,
-    entry: './js/ClientApp.js',
+    entry: [
+        'react-hot-loader/patch',
+        'webpack-dev-server/client?/http://localhost:8080',
+        'webpack/hot/only-dev-server',
+        './js/ClientApp.js',
+    ],
     devtool: 'cheap-eval-source-map',
     // devtool: process.env.NODE_ENV === 'development' ? 'cheap-eval-source-map' : false,
     output: {
@@ -24,6 +29,8 @@ module.exports = {
         chunks: true
     },
     plugins: [
+        new webpack.HotModuleReplacementPlugin(), 
+        new webpack.NamedModulesPlugin(),
         new webpack.LoaderOptionsPlugin({ options: {} })
     ],
     module: {

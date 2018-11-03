@@ -11,7 +11,7 @@
 ## Tests
 * jest 
 * enzyme
-* `yarn test -- --coverage`
+* `yarn test -- --coverage` with Istanbul
 
 ## React 
 
