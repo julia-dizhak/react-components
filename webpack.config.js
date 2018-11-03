@@ -7,13 +7,14 @@ module.exports = {
         'react-hot-loader/patch',
         'webpack-dev-server/client?/http://localhost:8080',
         'webpack/hot/only-dev-server',
-        './js/ClientApp.js',
+        './js/ClientApp.js'
     ],
     devtool: 'cheap-eval-source-map',
-    // devtool: process.env.NODE_ENV === 'development' ? 'cheap-eval-source-map' : false,
+    //devtool: process.env.NODE_ENV === 'development' ? 'cheap-eval-source-map' : false,
     output: {
         path: path.join(__dirname, 'public'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/public/'
     },
     devServer: {
         hot: true,

@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component } from 'react';
 import preload from '../data.json';
 
@@ -14,11 +16,7 @@ export default class Search extends Component {
         this.handleSearchTermChange = this.handleSearchTermChange.bind(this);
     }
 
-    // state = {
-    //     searchTearm: ''
-    // }
-
-    handleSearchTermChange(event) {
+    handleSearchTermChange(event: SyntheticKeyboardEvent & {target: HTMLInputElement}) {
         this.setState({searchTearm: event.target.value})
     }
 

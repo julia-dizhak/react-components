@@ -5,8 +5,10 @@
 * eslint
 * webpack
 * styled-components
-
 * Router, Route
+
+* flow
+* flow-typed
 
 ## Tests
 * jest 

@@ -1,5 +1,6 @@
 {
     "extends": [
+        "plugin:flowtype/recommended",
         "airbnb",
         "prettier",
         "prettier/react"
@@ -8,6 +9,7 @@
         "react/jsx-filename-extension": [0] 
     },
     "plugins": [
+        "flowtype",
         "react",
         "prettier"
     ],

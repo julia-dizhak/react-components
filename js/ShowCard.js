@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// $FlowFixMe
 import styled from 'styled-components';
 
 const propTypes = {
