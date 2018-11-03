@@ -11,6 +11,7 @@
 ## Tests
 * jest 
 * enzyme
+* `yarn test -- --coverage`
 
 ## React 
 

@@ -8,7 +8,6 @@ import preload from './../../data.json';
 import ShowCard from '../ShowCard';
    
 describe('search', () => {
-
     it('search renders correctly', () => {
         // const component = renderer.create(<Search />);
         // const tree = component.toJSON();

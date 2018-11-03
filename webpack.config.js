@@ -11,6 +11,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
+        hot: true,
         publicPath: '/public/',
         historyApiFallback: true
     },
