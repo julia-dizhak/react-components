@@ -23,8 +23,19 @@ describe('search', () => {
         expect(component.find(ShowCard).length).toEqual(preload.shows.length);
     });
 
-    xit('test', () => {
+    it('test', () => {
+        const component = shallow(<Search />);
+        const searchWord = 'black';
 
+        component.find('input').simulate('change', {target: {value: searchWord}});
+        
+        const showCount = preload.shows
+            .filter(show =>
+                `${show.title} ${show.description}`.toUpperCase()
+                    .indexOf(searchWord.toUpperCase()) >= 0
+            ).length;
+        
+        expect(component.find(ShowCard).length).toEqual(showCount);    
     });
 
 })
